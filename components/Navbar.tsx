@@ -8,12 +8,17 @@ const Navbar = async () => {
   // const session = await auth();
 
   return (
-    <header className="px-5 py-3 bg-yellow-100 shadow-sm font-work-sans">
+    <header className="px-3 sm:px-5 py-2 sm:py-3 bg-yellow-100 shadow-sm font-work-sans">
       <nav className="flex justify-between items-center">
         <Link href="/">
           <Image src="/logo.png" alt="logo" width={40} height={30} />
         </Link>
-
+        <div className="text-xl sm:text-3xl font-semibold text-center">
+          Jhandi Mundi{" "}
+          <span className="text-xs sm:text-sm font-bold">
+            {"(under development)"}
+          </span>
+        </div>
         {/* <div className="flex items-center gap-5 text-black">
           {session && session?.user ? (
             <>

@@ -59,17 +59,17 @@ const SpinnerGame = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-8 p-8">
-      <div className="text-3xl font-semibold mb-10">
-        Jandi Mundi{" "}
-        <span className="text-sm font-bold">{"(under development)"}</span>
-      </div>
+    <div className="flex flex-col items-center gap-4 sm:gap-8 p-4 sm:p-8">
       {/* <div className="font-bold">
         Game status :<span className="text-yellow-700">under development</span>
       </div> */}
       {/* <div className="text-2xl font-bold mb-10">Balance: ${balance}</div> */}
 
-      <WheelSpinner ref={wheelRef} isSpinning={isSpinning} />
+      <WheelSpinner
+        ref={wheelRef}
+        isSpinning={isSpinning}
+        className="mt-5 sm:mt-10"
+      />
 
       {/* <button
         onClick={handleSpin}
@@ -89,7 +89,7 @@ const SpinnerGame = () => {
           </div>
         ))}
       </div> */}
-      <div className="font-bold bg-yellow-100">
+      <div className="font-bold bg-yellow-100 text-sm sm:text-base p-2">
         Developed by Tushar Mahajan{" "}
       </div>
     </div>
